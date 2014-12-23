@@ -14,7 +14,7 @@
  *
  * $Id: common.php 14875 2014-12-12 15:55:23 Inkraja $
  */
- 
+
  /*Anpassung für itemtooltips*/
 .th-icon{
 	padding: 0px 0px 0px 0px !important;
@@ -96,7 +96,7 @@ html {
 	min-height: 100%;
 }
 body {
-    background: url("TEMPLATE_IMAGE_PATH/main_header_bg.jpg") no-repeat scroll center top #202020;	
+    background: url("TEMPLATE_IMAGE_PATH/main_header_bg.jpg") no-repeat scroll center top #202020;
 	min-height: 250px;
 	font-size: 13px;
 	font-family: Tahoma,Arial,Verdana,sans-serif;
@@ -162,7 +162,7 @@ h3 {
 	/*margin-left: 20px;
 	margin-right: 20px;
 	width:auto;*/
-	
+
 }
 
 #personalArea a {
@@ -231,7 +231,7 @@ h3 {
 /* footer */
 #footer {
 	text-align: center;
-	color: #fff;
+	color: #5A5A5A;
 	font-family:'Trebuchet MS',Arial,sans-serif;
 	font-size: 12px;
 	margin-top: 20px;
@@ -240,14 +240,14 @@ h3 {
 }
 
 .copyright {
-	color: #FFF;
+	color: #5A5A5A;
 }
 #footer a, copyright a {
-	color: #FFF;
+	color: #9C9C9C;
 	text-decoration:none;
 }
 #footer a:hover, copyright a:hover, #impressum:hover {
-	color: #fff;
+	color: #D5D5D5;
 	text-decoration:underline;
 }
 #dialog_disclaimer{
@@ -408,7 +408,7 @@ h3 {
 
 /* Content Container */
 #contentBody {
-	background-color:rgba(0, 0, 0, 0.0);	
+	background-color:rgba(0, 0, 0, 0.0);
 	border-radius: 2px 2px 2px 2px;
 	margin: 5px;
 	padding: 1px;
@@ -517,7 +517,6 @@ background-color:rgba(0, 0, 0, 0.0);
 .menu li{
 	padding-top: 5px;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #DDDDDD;
 }
 .menu li a{
 	display:block;
@@ -536,17 +535,19 @@ background-color:rgba(0, 0, 0, 0.0);
 }
 
 ul.mainmenu li a.link_indexphp:before, ul.mainmenu li a.link_entry_home:before {
-	content:"\f015";	
+	content:"\f015";
 	font-family: FontAwesome;
 	font-size: 20px;
 	/*Inkraja*/
-	color:transparent; 
+	color:transparent;
 	background: url("TEMPLATE_IMAGE_PATH/navIcons.png")no-repeat scroll 0px 0px transparent;
 	width: 30px;
 	height:30px;
 	display:block;
 	margin:-0.3em -.3em -.8em -.0em
-
+}
+ul.mainmenu li a.link_indexphp:hover:before, ul.mainmenu li a.link_entry_home:hover:before {
+	background-position: 0 -30px;
 }
 
 /* Links */
@@ -566,7 +567,7 @@ a:hover {
 }
 
 .ui-tabs-panel a:hover {
-	color: #000 !important;
+	color: #FFE99E !important;
 	text-decoration: none;
 }
 
@@ -587,9 +588,9 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 	margin: 3px;
 }
 
-select:focus, textarea:focus, input:focus {
-	border-color: rgba(82, 168, 236, 0.8);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+select:focus, textarea:focus, input:focus, select:hover, textarea:hover, input:hover{
+	border-color: #A79B2C;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #A79B2C;
 	outline: 0 none;
 }
 
@@ -1073,7 +1074,7 @@ div[aria-describedby="dialog-login"] .password-forgot{
 	border-bottom: 1px solid #CCCCCC;
 	font-family: 'Trebuchet MS',Arial,sans-serif;
 	font-size: 20px;
-	font-weight: bold;	
+	font-weight: bold;
 	padding-bottom: 15px;
 }
 
@@ -1144,18 +1145,21 @@ background: rgba(0, 0, 0, 0.65) !important;
 }
 
 .infobox-blue {
-	background-color: #D9EDF7;
-	color: #3A87AD;
+	color: #00ABFF;
+	border: 1px solid rgba(15, 185, 255, 0.6);
+	background: none repeat scroll 0% 0% rgba(15, 185, 255, 0.2);
 }
 
 .infobox-red {
-	background-color: #F2DEDE;
-	color: #B94A48;
+	color: #FF0500;
+	border: 1px solid rgba(255, 0, 0, 0.6);
+	background: none repeat scroll 0% 0% rgba(255, 0, 0, 0.2);
 }
 
 .infobox-green {
-	background-color: #DFF0D8;
-	color: #468847;
+	color: #2EBC30;
+	border: 1px solid #008000;
+	background: none repeat scroll 0% 0% rgba(0, 128, 0, 0.2);
 }
 
 /* general: pagination */
@@ -1326,7 +1330,7 @@ ul.breamcrumb li:first-child a i {
 }
 
 ul.breamcrumb a:hover{
-	text-shadow: 0 0px 10px #FFF;	
+	text-shadow: 0 0px 10px #FFF;
 }
 
 ul.breamcrumb a::after,
@@ -1502,7 +1506,7 @@ ul.breamcrumb .current::before{
 /* general: superfish - admin menu style */
 .sf-admin {
 	background: #202020; /* Old browsers */
-	
+
 	width: 100%;
 	min-height: 3em;
 }
@@ -1603,7 +1607,7 @@ nav{
 	background: #333;
 	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
 	background: -moz-linear-gradient(top, #666, #000);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#000');	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#000');
 	border: solid 1px #000;
 	vertical-align: baseline;
 	margin: 0 2px;
@@ -1761,7 +1765,7 @@ nav{
 	background: #131313;
 	margin:0;
 	padding:5px;
-	border:1px solid #dddddd;
+	border:1px solid #6F6F6F;
 	height:200px;
 	width:auto;
 	overflow: auto;
