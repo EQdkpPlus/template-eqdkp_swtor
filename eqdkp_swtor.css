@@ -940,14 +940,14 @@ fieldset.settings dt {
 	width: 55%;
 	text-align: left;
 	border: none;
-	border-right: 1px solid #CCCCCC;
+	border-right: 1px solid #747474;
 	padding-top: 3px;
 }
 fieldset.settings dd {
 	margin: 0 0 0 55%;
 	padding: 0 0 0 5px;
 	border: none;
-	border-left: 1px solid #CCCCCC;
+	border-left: 1px solid #747474;
 	vertical-align: middle;
 	font-size: 1.00em;
 	text-align: left;
@@ -974,10 +974,10 @@ fieldset.settings dl {
 	padding-bottom: 1px;
 }
 fieldset.settings dl:hover dt{
-	border-right: 1px solid #000;
+	border-right: 1px solid #202020;
 }
 fieldset.settings dl:hover dd{
-	border-left: 1px solid #000;
+	border-left: 1px solid #202020;
 }
 fieldset.settings dt label {
 	font-size: 1.00em;
@@ -1638,7 +1638,7 @@ nav{
 }
 
 .sf-ddm li li:hover {
-	background: #ededed;
+	background: #5F5F5F;
 	-webkit-border-radius: .5em;
 	-moz-border-radius: .5em;
 	border-radius: .5em;
@@ -1651,11 +1651,11 @@ nav{
 
 .sf-menu.sf-ddm ul {
 	color: #606060;
-	border: solid 1px #b7b7b7;
-	background: #fff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-	background: -moz-linear-gradient(top, #fff, #ededed);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
+	border: solid 1px #202020;
+	background: #4B4B4B;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4B4B4B), to(#202020));
+	background: -moz-linear-gradient(top, #4B4B4B, #202020);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4B4B4B', endColorstr='#202020');
 	-webkit-border-radius: .5em;
 	-moz-border-radius: .5em;
 	border-radius: .5em;
@@ -1665,8 +1665,11 @@ nav{
 	padding: 3px;
 }
 
-.sf-menu.sf-ddm ul a, .sf-menu.sf-ddm ul a:hover {
-	color: #606060 !important;
+.sf-menu.sf-ddm ul a {
+	color: #B3B3B3 !important;
+}
+.sf-menu.sf-ddm ul a:hover {
+	color: #DADADA !important;
 }
 
 /* Button Drodown-Menu */

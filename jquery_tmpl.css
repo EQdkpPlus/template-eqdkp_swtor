@@ -885,8 +885,8 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: 1px solid #000000;
-	background: #131313;
+	border: 1px solid #666;
+	background: -moz-linear-gradient(center top , #BABABA, #202020) repeat scroll 0% 0% transparent;
 	font-weight: bold;
 	color: #D4D4D4;
 }
