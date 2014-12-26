@@ -134,9 +134,9 @@ h1 {
 h2 {
 	border: none !important;
 	font-size: 18px;
-	background: url("TEMPLATE_IMAGE_PATH/largeFlavBar.png") no-repeat scroll center 10px transparent;/*Inkraja*/
-	padding-bottom: 15px;/*Inkraja*/
-	background-size: contain;/*Inkraja*/
+	background: url("TEMPLATE_IMAGE_PATH/largeFlavBar.png") no-repeat scroll center 10px transparent;
+	padding-bottom: 15px;
+	background-size: contain;
 }
 
 h3 {
@@ -158,7 +158,7 @@ h3 {
 	padding-right: 40px;
 	margin-bottom: 10px;
 	text-align:left;
-	margin: 0px auto;/*Inkraja*/
+	margin: 0px auto;
 	width:-webkit-fit-content;/*Inkraja Chrome*/
 	width:-moz-fit-content; /*Mozilla*/
 	width: 1106px; /*IE*/
@@ -238,8 +238,8 @@ h3 {
 	font-family:'Trebuchet MS',Arial,sans-serif;
 	font-size: 12px;
 	margin-top: 20px;
-	padding-top: 25px !important; /*Inkraja*/
-	background: url("TEMPLATE_IMAGE_PATH/footer_flavBar.png") no-repeat scroll center top transparent;/*Inkraja*/
+	padding-top: 25px !important; 
+	background: url("TEMPLATE_IMAGE_PATH/footer_flavBar.png") no-repeat scroll center top transparent;
 }
 
 .copyright {
@@ -374,6 +374,11 @@ h3 {
 	text-align:right;
 }
 
+#mainlogo{
+max-width:100%;
+max-height:130px;
+}
+
 #titles {
 	float:left;
 	text-align:left;
@@ -463,8 +468,8 @@ background-color:rgba(0, 0, 0, 0.0);
 
 .portalbox_content {
 	padding: 5px;
-	padding-top: 15px; /*Inkraja*/
-	background: url("TEMPLATE_IMAGE_PATH/flavBar_550.png") no-repeat scroll center top transparent; /*Inkraja*/
+	padding-top: 15px; 
+	background: url("TEMPLATE_IMAGE_PATH/flavBar_550.png") no-repeat scroll center top transparent; 
 }
 
 .timeline-large-scale, .timeline-small-scale {
@@ -528,9 +533,9 @@ background-color:rgba(0, 0, 0, 0.0);
 .sf-menu.mainmenu {
 	margin-top: 10px;
 	padding-left: 6%;
-	padding-right: 6%;/*Inkraja*/
+	padding-right: 6%;
 	margin-bottom: 5px;
-	width:auto;/*Inkraja*/
+	width:auto;
 }
 
 .mainmenu {
@@ -541,7 +546,7 @@ ul.mainmenu li a.link_indexphp:before, ul.mainmenu li a.link_entry_home:before {
 	content:"\f015";
 	font-family: FontAwesome;
 	font-size: 20px;
-	/*Inkraja*/
+	
 	color:transparent;
 	background: url("TEMPLATE_IMAGE_PATH/navIcons.png")no-repeat scroll 0px 0px transparent;
 	width: 30px;
@@ -565,7 +570,7 @@ a:hover {
 }
 
 .ui-tabs-panel a, .ui-tabs-panel a:link, .ui-tabs-panel a:active,.ui-tabs-panel a:visited{
-	color: #E0BD49 !important; /*Inkraja*/
+	color: #E0BD49 !important; 
 	text-decoration: none;
 }
 
@@ -831,7 +836,7 @@ a.blue, a.blue:hover, a.button, a.button:hover {
 
 #contentBody th, .portalbox_content th {
 	font-weight: bold;
-	background-color: rgba(225, 190, 70, 0.1); /*Inkraja*/
+	background-color: rgba(225, 190, 70, 0.1); 
 	white-space:nowrap;
 	text-align:left;
 	font-family:'Trebuchet MS',Arial,sans-serif;
@@ -995,9 +1000,9 @@ fieldset.settings dt span {
 img {
 	vertical-align: middle;
 }
-.article_content > p img, .article_content > img{/*inkraja*/
-	border:7px solid transparent;/*inkraja*/
-	border-image:url("TEMPLATE_IMAGE_PATH//mediaContainer.png") 7 5 7 5; /*inkraja*/
+.article_content > p img, .article_content > img{
+	border:7px solid transparent;
+	border-image:url("TEMPLATE_IMAGE_PATH//mediaContainer.png") 7 5 7 5; 
 }
 
 /* notify messages */
@@ -1528,10 +1533,6 @@ ul.breamcrumb .current::before{
     padding-bottom: 15px;
 	margin: 0px auto;
 	width:1166px;
-	/*width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-	height: 60px;*/
 
 }
 nav{
@@ -1586,13 +1587,15 @@ nav{
 	float: right;
 	text-align: left;
 	background: none;
+	color:#d7d7d7;
 }
-.sf-ddm > li a, .sf-ddm > li a:visited{
-	color: #d7d7d7 !important;
+.sf-ddm > li a, .sf-ddm > li a:visited {
+	color: #d7d7d7 ;
 	padding: 0.25em 0.5em;
 }
-.sf-ddm a:hover {
+.sf-ddm li a:hover,.sf-ddm  li a{
 	background: transparent;
+	color:#000 ;
 }
 
 .sf-ddm li:hover ul,
@@ -1646,22 +1649,20 @@ nav{
 
 .sf-ddm li.sfHover {
 	background: #e7d278;
-	color: #000
+	color: #d7d7d7;
 }
 
 .sf-menu.sf-ddm ul {
 	color: #606060;
-	border: solid 1px #202020;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0 5px 10px #6B6636;
+	-moz-box-shadow: 0 5px 10px #6B6636;
+	-webkit-box-shadow: 0 5px 10px #6B6636;
 	background: #4B4B4B;
 	background: -webkit-gradient(linear, left top, left bottom, from(#4B4B4B), to(#202020));
 	background: -moz-linear-gradient(top, #4B4B4B, #202020);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4B4B4B', endColorstr='#202020');
-	-webkit-border-radius: .5em;
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+
 	padding: 3px;
 }
 
@@ -1841,6 +1842,9 @@ nav{
 	padding: 3px;
 }
 
+.adminicon:before {
+font-size:inherit !important;
+}
 .eye{
 	display: inline-block;
 	cursor: pointer;
@@ -2596,10 +2600,15 @@ a.tool-item i {
 }
 .dropdown-menu {
 	background-clip: padding-box;
-	background-color: #202020;
+	background: #4B4B4B;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4B4B4B), to(#202020));
+	background: -moz-linear-gradient(top, #4B4B4B, #202020);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4B4B4B', endColorstr='#202020');
 	border: 1px solid rgba(0, 0, 0, .20);
 	border-radius: 6px 6px 6px 6px;
 	box-shadow: 0 5px 10px #6B6636;
+	-moz-box-shadow: 0 5px 10px #6B6636;
+	-webkit-box-shadow: 0 5px 10px #6B6636;
 	float: left;
 	left: -5px;
 	list-style: none outside none;
@@ -2690,7 +2699,7 @@ ul#mychars-points-tooltip.dropdown-menu li table tbody tr td a {
 }
 
 .mychars-points-tooltip tr.active {
-	background-color: #202020;
+	background-color: transparent;
 	color:#D4D4D4;
 }
 
@@ -2987,7 +2996,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 }
 
 .user-groups a {
-	background: none repeat scroll 0 0 #C88E27;/*Inkraja*/
+	background: none repeat scroll 0 0 #C88E27;
 	border-radius: 8px 8px 8px 8px;
 	color: #FFFFFF;
 	display: inline-block;
