@@ -159,13 +159,9 @@ h3 {
 	margin-bottom: 10px;
 	text-align:left;
 	margin: 0px auto;
-	width:-webkit-fit-content;/*Inkraja Chrome*/
+	width:-webkit-fit-content;
 	width:-moz-fit-content; /*Mozilla*/
 	width: 1106px; /*IE*/
-	/*margin-left: 20px;
-	margin-right: 20px;
-	width:auto;*/
-
 }
 
 #personalArea a {
@@ -211,8 +207,8 @@ h3 {
 	color: #262B31;
 	height: 16px;
 	padding: 2px 5px;
-	width: 150px;
-	font: 14px 'Trebuchet MS',Arial,sans-serif;
+	width: 90px;
+	font: 12px 'Trebuchet MS',Arial,sans-serif;
 }
 
 #personalAreaTime button, #personalAreaTime button:hover {
@@ -3429,4 +3425,47 @@ padding-right:0px !important;
 
 .elfinder .elfinder-navbar{
 	background-color: #202020 !important;
+}
+
+/*Chat Plugin*/
+.chatWindow, .chatWindowMenu{
+	background-color:#202020;
+	border: 1px solid rgba(0, 0, 0, .20);
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0 5px 10px #6B6636;
+	-moz-box-shadow: 0 5px 10px #6B6636;
+	-webkit-box-shadow: 0 5px 10px #6B6636;
+}
+
+ #chatMenu .chatWindowHeader2,.chatWindowHeader, .chatWindowHeader2 {
+	background: #202020;
+	color:#E0BD49;
+}
+.chatWindowContent, .chatWindowAddUser, .chat_last_online{
+	background: #131313;
+	color:#D7D7D7;
+}
+.active .chatWindowHeader{
+	background: #E0BD49;
+	color:#292323;
+}
+.chatPost{
+border-top:1px solid #6B6636;
+}
+.chatOnlineSeperator{
+border-bottom:1px solid #6B6636;
+}
+
+.chat_username, .chat_user_avatar {
+	color:#E0BD49;
+}
+#chatMenu .chatInput{
+	background: #131313;
+	border: none;
+}
+.chatWindowMin{
+	background:#E0BD49;
+	color:#292323;
+	border:0px solid #000;
+	border-radius: 6px 0px 0px 0px;
 }
