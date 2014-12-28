@@ -234,7 +234,7 @@ h3 {
 	font-family:'Trebuchet MS',Arial,sans-serif;
 	font-size: 12px;
 	margin-top: 20px;
-	padding-top: 25px !important; 
+	padding-top: 25px !important;
 	background: url("TEMPLATE_IMAGE_PATH/footer_flavBar.png") no-repeat scroll center top transparent;
 }
 
@@ -464,8 +464,8 @@ background-color:rgba(0, 0, 0, 0.0);
 
 .portalbox_content {
 	padding: 5px;
-	padding-top: 15px; 
-	background: url("TEMPLATE_IMAGE_PATH/flavBar_550.png") no-repeat scroll center top transparent; 
+	padding-top: 15px;
+	background: url("TEMPLATE_IMAGE_PATH/flavBar_550.png") no-repeat scroll center top transparent;
 }
 
 .timeline-large-scale, .timeline-small-scale {
@@ -542,7 +542,7 @@ ul.mainmenu li a.link_indexphp:before, ul.mainmenu li a.link_entry_home:before {
 	content:"\f015";
 	font-family: FontAwesome;
 	font-size: 20px;
-	
+
 	color:transparent;
 	background: url("TEMPLATE_IMAGE_PATH/navIcons.png")no-repeat scroll 0px 0px transparent;
 	width: 30px;
@@ -566,7 +566,7 @@ a:hover {
 }
 
 .ui-tabs-panel a, .ui-tabs-panel a:link, .ui-tabs-panel a:active,.ui-tabs-panel a:visited{
-	color: #E0BD49 !important; 
+	color: #E0BD49 !important;
 	text-decoration: none;
 }
 
@@ -832,7 +832,7 @@ a.blue, a.blue:hover, a.button, a.button:hover {
 
 #contentBody th, .portalbox_content th {
 	font-weight: bold;
-	background-color: rgba(225, 190, 70, 0.1); 
+	background-color: rgba(225, 190, 70, 0.1);
 	white-space:nowrap;
 	text-align:left;
 	font-family:'Trebuchet MS',Arial,sans-serif;
@@ -998,7 +998,7 @@ img {
 }
 .article_content > p img, .article_content > img{
 	border:7px solid transparent;
-	border-image:url("TEMPLATE_IMAGE_PATH//mediaContainer.png") 7 5 7 5; 
+	border-image:url("TEMPLATE_IMAGE_PATH//mediaContainer.png") 7 5 7 5;
 }
 
 /* notify messages */
@@ -3436,36 +3436,43 @@ padding-right:0px !important;
 	-moz-box-shadow: 0 5px 10px #6B6636;
 	-webkit-box-shadow: 0 5px 10px #6B6636;
 }
-
- #chatMenu .chatWindowHeader2,.chatWindowHeader, .chatWindowHeader2 {
-	background: #202020;
-	color:#E0BD49;
-}
-.chatWindowContent, .chatWindowAddUser, .chat_last_online{
-	background: #131313;
-	color:#D7D7D7;
-}
-.active .chatWindowHeader{
-	background: #E0BD49;
-	color:#292323;
-}
-.chatPost{
-border-top:1px solid #6B6636;
-}
-.chatOnlineSeperator{
-border-bottom:1px solid #6B6636;
-}
-
-.chat_username, .chat_user_avatar {
-	color:#E0BD49;
-}
-#chatMenu .chatInput{
-	background: #131313;
-	border: none;
-}
 .chatWindowMin{
 	background:#E0BD49;
 	color:#292323;
 	border:0px solid #000;
 	border-radius: 6px 0px 0px 0px;
+}
+
+.chatWindowHeader, .chatWindowHeader2 {
+	background: #202020;
+	color:#E0BD49;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.active .chatWindowHeader{
+	background: #E0BD49;
+	color:#292323;
+}
+
+.chatWindowContent, .chatWindowAddUser, .chat_last_online{
+	background: #131313;
+	color:#D7D7D7;
+}
+
+.chatPost { border-top:1px solid #6B6636; }
+.chatNewPost { background-color: rgba(255, 226, 0, 0.3); }
+.chatMessage { color: #D7D7D7; }
+.chatOnlineSeperator{ border-bottom: 1px solid #6B6636; }
+
+.chat_username, .chat_user_avatar { color:#E0BD49; }
+
+#chatMenu .chatInput{
+	background: #131313;
+	border: none;
+}
+.chatInput { border-color: #878787 }
+.chatInput input, .chatInput textarea {
+	background-color: rgba(117, 117, 117, 0.5);
+	color: #D7D7D7;
+	border: none;
 }
