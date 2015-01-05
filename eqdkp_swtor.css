@@ -3303,7 +3303,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	}
 
 	.nav-mobile-closebtn {
-		background-color: #4E7FA8;
+		background-color: #E0BD49;
 		color: #fff;
 		border-radius: 4px;
 		position: fixed;
@@ -3317,7 +3317,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	.mainmenu-mobile > li,  .nav-mobile-overlay .admin-headline, .adminmenu-mobile > li {
 		margin-bottom: 24px;
 		font-size: 18px;
-		color: #4E7FA8;
+		color: #E0BD49;
 		font-weight: bold;
 	}
 
@@ -3416,6 +3416,18 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	  height: 0;
 	  margin: 10px 0;
 	  overflow: hidden;
+	}
+	
+	#personalArea {
+		width: 100%;
+		padding: 0;
+		background-position-x: center;
+		background-size: 200%;
+	}
+	
+	#mainmenu {
+		width: 100%;
+		padding-bottom: 10px;
 	}
 }
 

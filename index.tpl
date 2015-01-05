@@ -501,9 +501,9 @@
 				{TEMPLATE_GAME_COPYRIGHT}
 			<br />
 				<br />
-				<a target="new" href="http://www.bioware.com"><img border="0" src="{TEMPLATE_PATH}/images/logoBioware.gif" alt="Bioware" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a target="new" href="http://www.ea.com"><img border="0" src="{TEMPLATE_PATH}/images/logoEA.gif" alt="Electronic Arts" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a target="new" href="http://www.lucasarts.com"><img border="0" src="{TEMPLATE_PATH}/images/logoLucas.gif" alt="LucasArts" /></a>
+				<a target="new" href="http://www.bioware.com" rel="nofollow"><img border="0" src="{TEMPLATE_PATH}/images/logoBioware.gif" alt="Bioware" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a target="new" href="http://www.ea.com" rel="nofollow"><img border="0" src="{TEMPLATE_PATH}/images/logoEA.gif" alt="Electronic Arts" /></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a target="new" href="http://www.lucasarts.com" rel="nofollow"><img border="0" src="{TEMPLATE_PATH}/images/logoLucas.gif" alt="LucasArts" /></a>
 				<br />
 				<br />
 				LucasArts, the LucasArts logo, STAR WARS and related properties are trademarks in the United States and/or in other countries of Lucasfilm Ltd. and/or its affiliates. © 2011-2012 Lucasfilm Entertainment Company Ltd. or Lucasfilm Ltd. All rights reserved. BioWare and the BioWare logo are trademarks of EA International (Studio and Publishing) Ltd. EA and the EA logo are trademarks of Electronic Arts Inc. All other trademarks are the property of their respective owners. This site is not supported by or related to LucasArts, BioWare or Electronic Arts.
