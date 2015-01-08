@@ -996,7 +996,7 @@ fieldset.settings dt span {
 img {
 	vertical-align: middle;
 }
-.article_content img:not(.itt-icon):not(.classicon):not(.raceicon):not(.rankicon):not(.talenticon):not(.eventicon):not(.roleicon):not(.gameicon) {
+.article_content img:not(.itt-icon):not(.classicon):not(.raceicon):not(.rankicon):not(.talenticon):not(.eventicon):not(.roleicon):not(.gameicon):not(.profession-icon):not(.member-charimage):not(.swtor-faction-icon):not(.swtor-reputation-icon)   {
 	border:7px solid transparent;
 	border-image:url("TEMPLATE_IMAGE_PATH//mediaContainer.png") 7 5 7 5;
 }
@@ -3683,7 +3683,7 @@ padding-right:0px !important;
 	color:#D7D7D7!important;
 }
 
-.chatPost { border-top:1px solid #6B6636!important; }
+.chatPost { border-top:1px solid #202020!important; }
 .chatNewPost { background-color: rgba(255, 226, 0, 0.3); }
 .chatMessage { color: #D7D7D7; }
 .chatOnlineSeperator{ border-bottom: 1px solid #6B6636; }
