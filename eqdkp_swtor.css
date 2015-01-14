@@ -1036,7 +1036,7 @@ fieldset.settings dt span {
 img {
 	vertical-align: middle;
 }
-.article_content img:not(.itt-icon):not(.classicon):not(.raceicon):not(.rankicon):not(.talenticon):not(.eventicon):not(.roleicon):not(.gameicon):not(.profession-icon):not(.member-charimage):not(.swtor-faction-icon):not(.swtor-reputation-icon)   {
+.article_content img:not(.absmiddle):not(.itt-icon):not(.classicon):not(.raceicon):not(.rankicon):not(.talenticon):not(.eventicon):not(.roleicon):not(.gameicon):not(.profession-icon):not(.member-charimage):not(.swtor-faction-icon):not(.swtor-reputation-icon)   {
 	border:7px solid transparent;
 	border-image:url("TEMPLATE_IMAGE_PATH//mediaContainer.png") 7 5 7 5;
 }
@@ -3160,6 +3160,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 		display:block;
 		float:none;
 		margin:0px;
+		margin-left:70px;
 		padding:0px;
 	}
 
@@ -3310,9 +3311,9 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 
 	.nav-mobile > i {
 		float: right;
-		background-color: #fff;
+		background-color: #202020;
 		border-radius: 4px;
-		color: #000;
+		color: #FFF;
 		padding: 4px 5px 2px 5px;
 		margin: 4px;
 		font-size: 22px;
@@ -3328,7 +3329,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 		display: none;
 		margin-bottom: 10px;
 		padding: 10px;
-		background-color: rgba(255,255,255,.95);
+		background-color: rgba(34,34,34,.95);
 		border-right: 1px solid #bbb;
 		z-index: 999;
 	}
@@ -3453,9 +3454,9 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 		width: 100%;
 		padding: 0;
 		background-position-x: center;
-		background-size: 200%;
+		background-size: 120%;
 	}
-
+	
 	#mainmenu {
 		width: 100%;
 		padding-bottom: 10px;
