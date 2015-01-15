@@ -3456,7 +3456,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 		background-position-x: center;
 		background-size: 120%;
 	}
-	
+
 	#mainmenu {
 		width: 100%;
 		padding-bottom: 10px;
@@ -3467,7 +3467,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	}
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 590px) {
 
 	.responsive fieldset.settings dd, .responsive fieldset.settings dt{
 		display:block;
