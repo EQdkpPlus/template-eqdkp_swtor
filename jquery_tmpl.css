@@ -885,8 +885,8 @@ body .ui-tooltip {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-	border: 1px solid #666;
-	background: -moz-linear-gradient(center top , #BABABA, #202020) repeat scroll 0% 0% transparent;
+	border: 1px solid #000;
+	background: -moz-linear-gradient(center top , #000, #202020) repeat scroll 0% 0% transparent;
 	font-weight: bold;
 	color: #D4D4D4;
 }
@@ -990,10 +990,10 @@ body .ui-tooltip {
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url("images/ui-icons_000_256x240.png");
+	background-image: url("images/ui-icons_ffffff_256x240.png");
 }
 .ui-state-active .ui-icon {
-	background-image: url("images/ui-icons_222222_256x240.png");
+	background-image: url("images/ui-icons_ffffff_256x240.png");
 }
 .ui-state-highlight .ui-icon {
 	background-image: url("images/ui-icons_4b8e0b_256x240.png");

@@ -613,7 +613,7 @@ input[type=radio], input[type=checkbox]{
 
 .input-icon i, .multilang-switcher {
 	border-radius: 4px 0 0 4px;
-	background-color: #EEEEEE;
+	background-color: #202020;
 	border: 1px solid #CCCCCC;
 	line-height: 20px;
 	padding: 4px 8px !important;
@@ -873,7 +873,13 @@ a.blue, a.blue:hover, a.button, a.button:hover {
 
 .table th, .portalbox_content th {
 	font-weight: bold;
-	background-color: rgba(225, 190, 70, 0.1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%, rgba(217, 161, 44, 0.50) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(217, 161, 44, 0.50)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%,rgba(217, 161, 44, 0.50) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%,rgba(217, 161, 44, 0.50) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0) 0%,rgba(217, 161, 44, 0.50) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(217, 161, 44, 0.50) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#FFF',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	white-space:nowrap;
 	text-align:left;
 	font-family:'Trebuchet MS',Arial,sans-serif;
@@ -1013,6 +1019,14 @@ fieldset.settings dl {
 	margin-bottom: 10px;
 	font-size: 0.95em;
 	padding-bottom: 1px;
+	clear: both;
+}
+fieldset.settings dl:after {
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0px;
 }
 fieldset.settings dl:hover dt{
 	border-right: 1px solid #202020;
@@ -1064,7 +1078,7 @@ img {
 }
 
 input.ui-spinner-input, input.ui-spinner-input:focus, input.ui-spinner-input:hover {
-	background:transparent;
+	background:#FFF;
 	border:none;
 	box-shadow: none;
 }
@@ -1616,11 +1630,11 @@ nav{
 	background: none;
 	color:#d7d7d7;
 }
-.sf-ddm > li a, .sf-ddm > li a:visited {
+ .sf-ddm  li a,.sf-ddm > li a{
 	color: #d7d7d7 ;
 	padding: 0.25em 0.5em;
 }
-.sf-ddm li a:hover,.sf-ddm  li a{
+.sf-ddm > li a:visited,.sf-ddm li a:hover,.sf-ddm > li a:active,.sf-ddm > li a:focus{
 	background: transparent;
 	color:#000 ;
 }
@@ -3744,4 +3758,14 @@ padding-right:0px !important;
 	background-color: rgba(117, 117, 117, 0.5);
 	color: #D7D7D7;
 	border: none;
+}
+/*PortalModule Timeline*/
+.timeline-wrap {
+	background-color: #C88E27 !important;
+}
+.timeline-event-node {
+	background: #FBE9A3!important;
+}
+.timeline-event-title span,.timeline-event-link a {
+	color:#FFEC84!important;
 }
