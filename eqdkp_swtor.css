@@ -18,10 +18,6 @@
  *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
- /*Anpassung für itemtooltips*/
-.th-icon{
-	padding: 0px 0px 0px 0px !important;
-}
 
  /* CSS Reset */
 html, body, div, span, applet, object, iframe,
@@ -1048,7 +1044,7 @@ fieldset.settings dt span {
 img {
 	vertical-align: middle;
 }
-.article_content img:not(.absmiddle):not(.itt-icon):not(.classicon):not(.raceicon):not(.rankicon):not(.talenticon):not(.eventicon):not(.roleicon):not(.gameicon):not(.profession-icon):not(.member-charimage):not(.swtor-faction-icon):not(.swtor-reputation-icon)   {
+div.article_content img{
 	border:7px solid transparent;
 	border-image:url("TEMPLATE_IMAGE_PATH//mediaContainer.png") 7 5 7 5;
 }
@@ -2566,7 +2562,7 @@ a.tool-item i {
 }
 
 /* Notifications */
-.notification-bubble-red {
+.bubble-red {
 	background-color: #B94A48;
 	margin-right: 4px;
 	padding-right: 9px;
@@ -2583,7 +2579,7 @@ a.tool-item i {
 	vertical-align: baseline;
 	white-space: nowrap;
 }
-.notification-bubble-yellow {
+.bubble-yellow {
 	background-color: #F89406;
 	margin-right: 4px;
 	padding-right: 9px;
@@ -2601,7 +2597,7 @@ a.tool-item i {
 	white-space: nowrap;
 }
 
-.notification-bubble-green{
+.bubble-green{
 	background-color: #468847;
 	margin-right: 4px;
 	padding-right: 9px;
@@ -3666,17 +3662,17 @@ li.prio_2 {
 	border-left: 4px solid #B94A48;
 }
 
-.notification-bubble-green.filtered {
+.bubble-green.filtered {
 	background-color: #ddd !important;
 	border: 1px solid #468847 !important;
 }
 
-.notification-bubble-yellow.filtered {
+.bubble-yellow.filtered {
 	background-color: #ddd !important;
 	border: 1px solid #F89406 !important;
 }
 
-.notification-bubble-red.filtered {
+.bubble-red.filtered {
 	background-color: #ddd !important;
 	border: 1px solid #B94A48 !important;
 }
