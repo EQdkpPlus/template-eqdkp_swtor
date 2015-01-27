@@ -3692,6 +3692,17 @@ li.prio_2 {
 .notification_list li:first-child{
 	border-top: 1px solid #ccc;
 }
+
+.toggleResponsive {
+	margin-bottom: 6px;
+}
+
+.rte-autocomplete.dropdown-menu {
+	margin-top: 12px;
+	text-align: left;
+	padding-left: 6px;
+}
+
 /*Characterprofile SWTOR*/
 .profession.portalbox_head{
 padding-left:0px !important;
