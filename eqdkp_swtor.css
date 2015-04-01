@@ -3810,7 +3810,9 @@ padding-right:0px !important;
 .elfinder .elfinder-navbar{
 	background-color: #202020 !important;
 }
-
+.elfinder-info-title {color: #131313;}
+.elfinder-info-tb {background: #202020;}
+.elfinder .elfinder-statusbar {color:#fff!important;}
 /*Chat Plugin*/
 .chatWindow, .chatWindowMenu{
 	background-color:#202020;
