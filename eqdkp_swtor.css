@@ -178,6 +178,11 @@ h3 {
 	margin-top: 10px;
 	margin-left: 57px;
 }
+#personalAreaUser .user-avatar-smallest > img{
+	margin-top: -5px;
+	margin-bottom: -4px;
+}
+
 #personalAreaTime {
 	float:right;
 	margin-top: 4px;
@@ -2574,6 +2579,10 @@ td.hiddenSmartphone, th.hiddenSmartphone {
 
 .user-avatar-small, .user-avatar-small img {
 	max-height: 32px;
+}
+
+.user-avatar-smallest, .user-avatar-smallest img {
+	max-height: 24px;
 }
 
 .user-avatar-border img {
