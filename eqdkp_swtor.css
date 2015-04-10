@@ -226,6 +226,22 @@ h3 {
 	font-size: 11px;
 }
 
+#loginarea_search {
+	width: 45px !important;
+	transition: width 0.5s ease-in-out;
+}
+
+#personalAreaTime .search_button {
+	width: 25px;
+	opacity: 0;
+	transition: opacity 1s ease-in;
+}
+
+#loginarea_search:hover,
+#loginarea_search:focus { width: 120px !important; }
+#loginarea_search:hover ~ .search_button,
+#loginarea_search:focus ~ .search_button { opacity: 1; }
+
 /* footer */
 #footer {
 	text-align: center;
