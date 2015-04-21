@@ -1756,9 +1756,11 @@ nav{
 	text-align: left;
 	background: none;
 }
-.sf-btn-ddm > li a, .sf-btn-ddm > li a:visited{
+.sf-btn-ddm > li a, .sf-btn-ddm > li a:visited, .sf-btn-ddm > li a:link, .sf-btn-ddm > li a:active{
 	color: #d7d7d7 !important;
-	padding: 0.25em 0.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+	padding-left: 0.5em;
 }
 .sf-btn-ddm a:hover {
 	background: transparent;
