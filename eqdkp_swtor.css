@@ -2143,7 +2143,7 @@ fieldset.settings.floatRight.raid input[type="text"]{
 #bottommenu_admin, #bottommenu_chars{
 	position: fixed;
 	bottom: 0px;
-	background: rgba(0,0,0,.85);
+	background: rgba(186, 126, 0, 0.85);
 	float: left;
 	width: 70%;
 	z-index: 99;
@@ -2200,7 +2200,7 @@ fieldset.settings.floatRight.raid input[type="text"]{
 	vertical-align:middle;
 }
 .buttonblock{
-	color:black;
+	color: #D4D4D4;
 }
 #raidcal_signin_form h2 span.toggle_button:before, #toogleRaidcalModeration h2 span.toggle_button:before {
 	float: none !important;
