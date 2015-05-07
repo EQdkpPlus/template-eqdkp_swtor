@@ -113,7 +113,6 @@ h1, h2, h3 {
 	font-weight: bold;
 	margin-bottom: 10px;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #CCCCCC;
 	margin-top: 5px;
 	color:#E0BD49;
 }
@@ -126,7 +125,7 @@ h1 {
 }
 
 h2 {
-	border: none !important;
+	border: none;
 	font-size: 18px;
 	background: url("TEMPLATE_IMAGE_PATH/largeFlavBar.png") no-repeat scroll center 10px transparent;
 	padding-bottom: 15px;
