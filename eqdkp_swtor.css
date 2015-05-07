@@ -441,6 +441,33 @@ background-color:rgba(0, 0, 0, 0.0);
 	text-align: left;
 }
 
+/* Sidebar */
+.contentSidebar {
+	display: flex;
+	overflow: hidden !important;
+}
+
+.contentSidebarRight {
+	border-left: 1px solid @eqdkpSidebarBorderColor;
+	background-color: @eqdkpSidebarBackgroundColor;
+	color: @eqdkpSidebarFontColor;
+	padding: 10px;
+}
+
+.contentSidebarLeft {
+	border-right: 1px solid @eqdkpSidebarBorderColor;
+	background-color: @eqdkpSidebarBackgroundColor;
+	color: @eqdkpSidebarFontColor;
+	padding: 10px;
+}
+
+/* Contrast */
+.contentContrast {
+	color: @eqdkpContentContrastColor;
+	background-color: @eqdkpContentContrastBackgroundColor;
+	border-color: @eqdkpContentContrastBorderColor;
+}
+
 #contentFooter {
 	min-height: 2.5em;
 	line-height: 2.5em;
@@ -1257,6 +1284,11 @@ background: rgba(0, 0, 0, 0.65) !important;
 	color: #2EBC30;
 	border: 1px solid #008000;
 	background: none repeat scroll 0% 0% rgba(0, 128, 0, 0.2);
+}
+
+.infobox-opacgrey {
+	background: rgba(0, 0, 0, 0.2);
+	color: #000000;
 }
 
 /* general: pagination */
@@ -2107,6 +2139,68 @@ fieldset.settings.floatRight.raid input[type="text"]{
 	line-height: 35px;
 }
 
+#bottommenu_admin, #bottommenu_chars{
+	position: fixed;
+	bottom: 0px;
+	background: rgba(186, 126, 0, 0.85);
+	float: left;
+	width: 70%;
+	z-index: 99;
+	height: 42px;
+	padding: 0px 0 0px 10px;
+	display:none;
+	color:white;
+	vertical-align:middle;
+	margin:0;
+}
+#bottommenu_chars{
+	height: 70px;
+	clear: both;
+}
+.bottommenu_roundedcorner{
+	border-radius: 10px 10px 0px 0px;
+}
+.bottommenu_chars_table {
+	height: 70px;
+	width:100%;
+}
+.bottommenu_admin_table {
+	height: 42px;
+	width:100%;
+}
+.bottommenu_chars_icons {
+	width:65px;
+}
+.bottommenu_admin_icons {
+	width:48px;
+}
+.bottommenu_chars_note {
+	width:60%;
+}
+.hl_attendee_checked{
+	box-shadow: 0px 0px 3px #008AFF;
+	border-color: #008AFF;
+}
+.raidcal_buttonrow{
+	vertical-align:middle;
+	width: 100%;
+	margin: 0px 0px 10px 0px;
+}
+.raidcal_buttonrow_left{
+	width: 60%;
+	vertical-align:middle;
+}
+.raidcal_buttonrow_middle{
+	width: 22%;
+	vertical-align:middle;
+}
+.raidcal_buttonrow_right{
+	width: 18%;
+	vertical-align:middle;
+}
+.buttonblock{
+	color: #D4D4D4;
+}
 #raidcal_signin_form h2 span.toggle_button:before, #toogleRaidcalModeration h2 span.toggle_button:before {
 	float: none !important;
 	font-size: 13px;
@@ -2198,7 +2292,6 @@ a.attendee_Link:hover{
 
 span.group_selector {
 	outline: none;
-	float: right;
 	display: block;
 }
 
@@ -3419,7 +3512,11 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 		float: none;
 	}
 
-
+	.responsive div.leaderboard > div.floatLeft {
+		float: none;
+		width: 100% !important;
+	}
+	
 	/* Mobile Navigation */
 	.nav-mobile {
 		background: #45484d; /* Old browsers */
@@ -3857,6 +3954,16 @@ button.thirdpartylogin.openid {
 	margin-top: 12px;
 	text-align: left;
 	padding-left: 6px;
+}
+
+/* Leaderboard */
+.leaderboard {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.leaderboard > div > div{
+	padding: 6px;
 }
 
 /*Characterprofile SWTOR*/
