@@ -395,7 +395,7 @@
 
 		<header>
 			<div id="header">
-				<!-- LISTENER body_top -->
+				<!-- LISTENER header_top -->
 				<div id="logoContainer" class="{T_LOGO_POSITION}">
 					<div id="logoArea">
 						<!-- IF HEADER_LOGO -->
