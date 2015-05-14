@@ -3723,6 +3723,21 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	.responsive .langswitch-tooltip-trigger > span {
 		display: none;
 	}
+	
+	.responsive .contentSidebar, .responsive .contentSidebarRight, .responsive .contentSidebarLeft {
+		display: block;
+		border: none;
+		background: none;
+	}
+	
+	.responsive .contentSidebarRight, .responsive .contentSidebarLeft {
+		width: auto !important;
+		border-top: 1px solid @eqdkpSidebarBorderColor;
+	}
+	
+	.responsive #personalAreaUser .user-avatar-smallest>img {
+		margin-top: 4px;
+	}
 }
 
 @media all and (max-width: 590px) {
@@ -3769,6 +3784,17 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 
 	.responsive .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 		float: none;
+	}
+	.responsive .share-text {
+		display: none;
+	}
+	
+	.responsive .social-bookmarks li a.social-bookmarks-count {
+		width: 50px;
+	}
+
+	.responsive #personalAreaUser ul li {
+		margin-right: 10px;
 	}
 
 }
