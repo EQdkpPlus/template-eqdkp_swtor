@@ -19,7 +19,7 @@
  */
 
 
- /* CSS Reset */
+/* CSS Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,81 +40,52 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
+footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
 
- /*  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome*/
-.fa-inverse{color:#000}
+/*  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome*/
+.fa-inverse { color: #000; }
 
- /* icon styles */
-.icon-grey{
-	color:#6E6E6E;
-}
-
-.icon-sm1{
-	font-size:0.8em;
-}
-
-.icon-sm2{
-	font-size:0.6em;
-}
-
-.icon-sm3{
-	font-size:0.5em;
-}
-
-.icon-red {
-	color: red;
-}
+/* icon styles */
+.icon-sm1 { font-size: .8em; }
+.icon-sm2 { font-size: .6em; }
+.icon-sm3 { font-size: .5em; }
+.icon-grey { color: #6E6E6E; }
+.icon-red { color: red; }
 
 /* body */
-html {
-	min-height: 100%;
-}
+html { min-height: 100%; }
 body {
-    background: url('TEMPLATE_BACKGROUND') no-repeat T_BACKGROUND_POSITION center top #202020;
-	min-height: 250px;
-	max-height:260px;
-	font-size: 13px;
-	font-family: Tahoma,Arial,Verdana,sans-serif;
-	color: #D4D4D4;
-	text-align: center;
 	width: 100%;
+	min-height: 250px;
+	max-height: 260px;
+    background: url('@{eqdkpBackgroundImage}') no-repeat @eqdkpBackgroundImagePosition center top @eqdkpBodyBackgroundColor;
+	color: @eqdkpBodyFontColor;
+	font-size: @eqdkpBodyFontSize;
+	font-family: @eqdkpBodyFontFamily;
+	text-align: center;
 }
 
 body.simple-header {
-	background: #202020;
+	background: @eqdkpBodyBackgroundColor;
 	margin: 5px;
 }
 
 h1, h2, h3 {
-	font-family: 'Trebuchet MS',Arial,sans-serif;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
 	font-weight: bold;
 	margin-bottom: 10px;
 	padding-bottom: 5px;
 	margin-top: 5px;
-	color:#E0BD49;
+	color: #E0BD49;
 }
 
 h1 {
@@ -315,7 +286,7 @@ h3 {
 }
 
 .fixed_width #wrapper {
-	min-width: T_PORTAL_WIDTH !important;
+	min-width: @eqdkpPortalWidth !important;
 }
 
 #wrapper {
@@ -327,15 +298,15 @@ h3 {
 }
 
 .fixed_width #wrapper .portal .second {
-	width: T_PORTAL_WIDTH_WITHOUT_BOTH_COLUMNS !important;
+	width: @eqdkpPortalWidthWithoutBothColumns !important;
 }
 
 .fixed_width #wrapper .portal .second.no_third_column {
-	width: T_PORTAL_WIDTH_WITHOUT_LEFT_COLUMN !important;
+	width: @eqdkpPortalWidthWithoutLeftColumn !important;
 }
 
 .fixed_width #personalAreaInner {
-	width: T_PORTAL_WIDTH !important;
+	width: @eqdkpPortalWidth !important;
 	margin: auto;
 }
 
@@ -625,23 +596,21 @@ ul.mainmenu li a.link_indexphp:hover:before, ul.mainmenu li a.link_entry_home:ho
 
 /* Links */
 a, a:link, a:active, a:visited {
-	color: #E0BD49;
-	text-decoration: none;
+	color: @eqdkpBodyLinkColor;
+	text-decoration: @eqdkpBodyLinkDecoration;
 }
-
 a:hover {
-	color: #FFEC84;
-	text-decoration: none;
+	color: @eqdkpBodyLinkColorHover;
+	text-decoration: @eqdkpBodyLinkDecoration;
 }
 
-.ui-tabs-panel a, .ui-tabs-panel a:link, .ui-tabs-panel a:active,.ui-tabs-panel a:visited{
-	color: #E0BD49 !important;
-	text-decoration: none;
+.ui-tabs-panel a, .ui-tabs-panel a:link, .ui-tabs-panel a:active,.ui-tabs-panel a:visited {
+	color: @eqdkpBodyLinkColor !important;
+	text-decoration: @eqdkpBodyLinkDecoration;
 }
-
 .ui-tabs-panel a:hover {
-	color: #FFE99E !important;
-	text-decoration: none;
+	color: @eqdkpBodyLinkColorHover !important;
+	text-decoration: @eqdkpBodyLinkDecoration;
 }
 
 /* Inputs */
