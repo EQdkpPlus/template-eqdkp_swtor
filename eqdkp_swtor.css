@@ -28,11 +28,11 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video,
+table.table, .table caption, .table tbody, .table tfoot, .table thead, .table tr, .table th, .table td {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -509,6 +509,9 @@ background-color:rgba(0, 0, 0, 0.0);
 }
 
 /* Toggle Buttons for portalbox */
+.portalbox_head .portal_fe_edit { display: none; }
+.portalbox:hover .portal_fe_edit { display: inline; }
+
 .toggle_button:before{
 	content:"\f078";
 	font-family: FontAwesome;
@@ -1376,6 +1379,10 @@ div.pagination {
 
 .articleSitemap li:hover a, .categoryChildSitemap li:hover a {
 	color: #000;
+}
+
+.noheader .categoryChildSitemap {
+	float: none;
 }
 
 hr#system-readmore {
@@ -2287,7 +2294,9 @@ span.group_selector {
 	top: -8px;
 	left: -14px;
 }
-
+.tooltiprow{
+	min-height: 24px;
+}
 #memberScroller{
 	height: 300px;
 	overflow:auto;
@@ -2322,6 +2331,9 @@ span.group_selector {
 .charchange_menucontainer{
 	background-color:#466988;
 	overflow: hidden;
+}
+.eventdata-details div{
+	margin: 8px 0px;
 }
 
 /* general: game specific */
@@ -3784,7 +3796,10 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	.responsive #personalAreaUser ul li {
 		margin-right: 10px;
 	}
-
+	
+	.list-type1 .ribbons, .list-type2 .ribbons, .list-type3 .ribbons  {
+		display: none;
+	}
 }
 
 
@@ -3976,6 +3991,20 @@ button.thirdpartylogin.openid {
 	border: 1px solid #B94A48 !important;
 }
 
+.bubble {
+  background-color: @eqdkpContentHighlightColor;
+  border-radius: 9px;
+  color: @eqdkpContentBackgroundColor;
+  display: inline-block;
+  font-size: .70rem;
+  padding: 1px 6px 1px;
+  position: relative;
+  text-shadow: none !important;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
 .notification_list li{
 	padding-bottom: 6px;
 	padding-top: 6px;
@@ -4008,25 +4037,115 @@ button.thirdpartylogin.openid {
 	flex-wrap: wrap;
 }
 
-.leaderboard > div > div{
+.leaderboard > div > div {
 	padding: 6px;
 }
 
-/*Characterprofile SWTOR*/
-.profession.portalbox_head{
-padding-left:0px !important;
-padding-right:0px !important;
+/* Big Dates for Article List */
+.bigDateNumber {
+	font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    font-weight: 100;
+	width: 100%;
+    display: block;
 }
-.profession-name {}
-.profession-row {}
+
+.bigDateContainer {
+	text-align: center;
+	width: 100px;
+	border-right: 1px solid @eqdkpContentBorderColor;
+	margin-right: 12px;
+	display: block;
+	position: relative;
+}
+
+.list-type1 .td.bigDateTd, .list-type3 .td.bigDateTd {
+	width: 100px;
+}
+
+.list-type1 .td, .list-type2 .td, .list-type3 .td {
+	vertical-align: top;
+}
+
+.list-type2 h2 {
+	border-bottom: none;
+}
+
+.list-type2 .fa-calendar-o, .list-type2 .fa-comments, .list-type2 .fa-folder-o {
+	margin-left: 10px;
+}
+
+/* Ribbons */
+
+.article_content {
+  position: relative;
+}
+
+@ribbon: @eqdkpContentHighlightColor;
+.ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+	& span {
+	  font-size: 10px;
+	  font-weight: bold;
+	  color: @eqdkpContentBackgroundColor;
+	  text-transform: uppercase;
+	  text-align: center;
+	  line-height: 20px;
+	  height: 20px;
+	  transform: rotate(45deg);
+	  width: 100px;
+	  display: block;
+	  background: @ribbon;
+	  background: linear-gradient(lighten(@ribbon,20%) 0%, @ribbon 100%);
+	  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+	  position: absolute;
+	  top: 19px; right: -21px;
+		&::before {
+			content: "";
+		  position: absolute; left: 0px; top: 100%;
+		  z-index: -1;
+		  border-left: 3px solid @ribbon;
+		  border-right: 3px solid transparent;
+		  border-bottom: 3px solid transparent;
+		border-top: 3px solid @ribbon;	}
+		&::after {
+		  content: "";
+		  position: absolute; right: 0px; top: 100%;
+		  z-index: -1;
+		  border-left: 3px solid transparent;
+		  border-right: 3px solid @ribbon;
+		  border-bottom: 3px solid transparent;
+		  border-top: 3px solid @ribbon;	}
+	}
+}
+
+.featured .ribbon > span {
+	background: linear-gradient(lighten(gold,20%) 0%, gold 100%);
+	color: black;
+}
+
+
+
+/* Characterprofile SWTOR */
+.profession.portalbox_head{
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
 
 .elfinder .elfinder-navbar{
 	background-color: #202020 !important;
 }
-.elfinder-info-title {color: #131313;}
-.elfinder-info-tb {background: #202020;}
-.elfinder .elfinder-statusbar {color:#fff!important;}
-/*Chat Plugin*/
+.elfinder-info-title { color: #131313; }
+.elfinder-info-tb { background: #202020; }
+.elfinder .elfinder-statusbar { color:#fff!important; }
+
+/* Chat Plugin */
 .chatWindow, .chatWindowMenu{
 	background-color:#202020;
 	border: 1px solid rgba(0, 0, 0, .20);
