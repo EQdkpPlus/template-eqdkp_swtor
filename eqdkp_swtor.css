@@ -399,7 +399,7 @@ max-height:130px;
 
 /* Content Container */
 #contentBody {
-	background-color:rgba(0, 0, 0, 0.0);
+	background-color: @eqdkpContentBackgroundColor;
 	border-radius: 2px 2px 2px 2px;
 	margin: 5px;
 	padding: 1px;
@@ -407,7 +407,7 @@ max-height:130px;
 }
 
 #contentBody2 {
-background-color:rgba(0, 0, 0, 0.0);
+	background-color: @eqdkpContentBackgroundColor;
 	padding: 5px;
 	text-align: left;
 }
@@ -487,21 +487,17 @@ background-color:rgba(0, 0, 0, 0.0);
 }
 
 .portalbox_head {
-/*	background-color: #505050;
-	border-bottom: 2px solid #E0BD49;*/
 	color: #E0BD49;
 	font-weight: bold;
 	font-family: 'Trebuchet MS',Arial,sans-serif;
 	padding: 5px 2px 5px 2px;
 	font-size: 14px;
-	/*background: url("TEMPLATE_IMAGE_PATH/flavBar_550.png") no-repeat scroll center bottom transparent;*/
-
 }
 
 .portalbox_content {
 	padding: 5px;
 	padding-top: 15px;
-	background: url("TEMPLATE_IMAGE_PATH/flavBar_550.png") no-repeat scroll center top transparent;
+	background: url("TEMPLATE_IMAGE_PATH/flavBar_550.png") no-repeat scroll center top @eqdkpContentBackgroundColor;
 }
 
 .timeline-large-scale, .timeline-small-scale {
