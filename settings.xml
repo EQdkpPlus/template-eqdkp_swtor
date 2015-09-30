@@ -18,9 +18,9 @@
 	<body_link_color_hover>rgb(255, 236, 132)</body_link_color_hover>
 	<body_link_decoration>none</body_link_decoration>
 	
-	<container_background_color></container_background_color>
-	<container_border_color></container_border_color>
-	<content_background_color></content_background_color>
+	<!-- NOT IN USE --><container_background_color>rgb(255, 255, 255)</container_background_color>
+	<!-- NOT IN USE --><container_border_color>rgb(255, 255, 255)</container_border_color>
+	<content_background_color>rgba(0, 0, 0, 0)</content_background_color>
 	<content_font_color>rgb(159, 159, 159)</content_font_color>
 	<content_font_color_headings>rgb(224, 189, 73)</content_font_color_headings>
 	<content_link_color></content_link_color>
