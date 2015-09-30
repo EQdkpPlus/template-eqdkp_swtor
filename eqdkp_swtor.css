@@ -113,10 +113,10 @@ h3 {
 /* personal area */
 #personalArea {
 	position: relative;
-	background: url("TEMPLATE_IMAGE_PATH/headerTab_bg.png") no-repeat scroll 0% 0% transparent;
+	background: url("TEMPLATE_IMAGE_PATH/headerTab_bg.png") no-repeat scroll 0% 0% @eqdkpUserareaBackgroundColor;
 	background-size: 100%;
 	min-height: 50px;
-	color: #d9d7d7;
+	color: @eqdkpUserareaFontColor;
 	font: 13px 'Trebuchet MS',Arial,sans-serif;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -129,12 +129,12 @@ h3 {
 }
 
 #personalArea a {
-	color: #d9d7d7;
-	text-decoration:none;
+	color: @eqdkpUserareaLinkColor;
+	text-decoration: none;
 }
 #personalArea a:hover {
-	color: #fff;
-	text-decoration:underline;
+	color: @eqdkpUserareaLinkColorHover;
+	text-decoration: underline;
 }
 #personalArea a:hover i {
 	text-decoration:none;

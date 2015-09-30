@@ -35,10 +35,10 @@
 	<content_neutral_color></content_neutral_color>
 	<content_highlight_color></content_highlight_color>
 	
-	<userarea_background_color></userarea_background_color>
-	<userarea_font_color></userarea_font_color>
-	<userarea_link_color></userarea_link_color>
-	<userarea_link_color_hover></userarea_link_color_hover>
+	<userarea_background_color>rgba(0, 0, 0, 0)</userarea_background_color>
+	<userarea_font_color>rgb(217, 215, 215)</userarea_font_color>
+	<userarea_link_color>rgb(217, 215, 215)</userarea_link_color>
+	<userarea_link_color_hover>rgb(255, 255, 255)</userarea_link_color_hover>
 	
 	<table_th_background_color></table_th_background_color>
 	<table_th_font_color></table_th_font_color>
