@@ -98,7 +98,7 @@ h1 {
 h2 {
 	border: none;
 	font-size: 18px;
-	background: url("TEMPLATE_IMAGE_PATH/largeFlavBar.png") no-repeat scroll center 10px transparent;
+	background: url('@{eqdkpTemplateImagePath}largeFlavBar.png') no-repeat scroll center 10px transparent;
 	padding-bottom: 15px;
 	background-size: contain;
 }
@@ -113,7 +113,7 @@ h3 {
 /* personal area */
 #personalArea {
 	position: relative;
-	background: url("TEMPLATE_IMAGE_PATH/headerTab_bg.png") no-repeat scroll 0% 0% @eqdkpUserareaBackgroundColor;
+	background: url('@{eqdkpTemplateImagePath}headerTab_bg.png') no-repeat scroll 0% 0% @eqdkpUserareaBackgroundColor;
 	background-size: 100%;
 	min-height: 50px;
 	color: @eqdkpUserareaFontColor;
@@ -220,7 +220,7 @@ h3 {
 	font-size: 12px;
 /*	margin-top: 20px;*/
 	padding-top: 25px !important;
-	background: url("TEMPLATE_IMAGE_PATH/footer_flavBar.png") no-repeat scroll center top transparent;
+	background: url('@{eqdkpTemplateImagePath}footer_flavBar.png') no-repeat scroll center top transparent;
 	background-color: #202020;
 }
 
@@ -497,7 +497,7 @@ max-height:130px;
 .portalbox_content {
 	padding: 5px;
 	padding-top: 15px;
-	background: url("TEMPLATE_IMAGE_PATH/flavBar_550.png") no-repeat scroll center top @eqdkpContentBackgroundColor;
+	background: url('@{eqdkpTemplateImagePath}flavBar_550.png') no-repeat scroll center top @eqdkpContentBackgroundColor;
 }
 
 .timeline-large-scale, .timeline-small-scale {
@@ -580,7 +580,7 @@ ul.mainmenu li a.link_indexphp:before, ul.mainmenu li a.link_entry_home:before {
 	font-size: 20px;
 
 	color:transparent;
-	background: url("TEMPLATE_IMAGE_PATH/navIcons.png")no-repeat scroll 0px 0px transparent;
+	background: url('@{eqdkpTemplateImagePath}navIcons.png')no-repeat scroll 0px 0px transparent;
 	width: 30px;
 	height:30px;
 	display:block;
@@ -1078,7 +1078,7 @@ img {
 }
 div.article_content img:not(.itt-icon):not(.classicon):not(.raceicon):not(.rankicon):not(.talenticon):not(.eventicon):not(.roleicon):not(.gameicon) {
 	border:7px solid transparent;
-	border-image:url("TEMPLATE_IMAGE_PATH//mediaContainer.png") 7 5 7 5;
+	border-image:url('@{eqdkpTemplateImagePath}/mediaContainer.png') 7 5 7 5;
 }
 
 /* notify messages */
@@ -1394,7 +1394,7 @@ ul.breamcrumb a {
 	color: #444;
 	position: relative;
 	text-shadow: 0 1px 0 rgba(255,255,255,.5);
-	background-image: url("TEMPLATE_IMAGE_PATH/lightsaber_blue.png");
+	background-image: url('@{eqdkpTemplateImagePath}lightsaber_blue.png');
 	background-position: -5.5em center;
 	margin-bottom: -1px;
 }
@@ -1601,7 +1601,7 @@ ul.breamcrumb .current::before{
 }
 
 #mainmenu {
-    background: url("TEMPLATE_IMAGE_PATH/mainNavBar.png") no-repeat scroll center top transparent;
+    background: url('@{eqdkpTemplateImagePath}mainNavBar.png') no-repeat scroll center top transparent;
     background-size: 100%;
     padding-bottom: 15px;
 	margin: 0px auto;
@@ -1609,7 +1609,7 @@ ul.breamcrumb .current::before{
 
 }
 nav{
-	background: url("TEMPLATE_IMAGE_PATH/middleBg_tile.png") repeat-x scroll transparent;
+	background: url('@{eqdkpTemplateImagePath}middleBg_tile.png') repeat-x scroll transparent;
 	background-position: 0px 42px;
 		z-index:100;
 }
