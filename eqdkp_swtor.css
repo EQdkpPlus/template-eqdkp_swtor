@@ -970,7 +970,7 @@ a.blue, a.blue:hover, a.button, a.button:hover {
 }
 
 .contentSubheader {
-	color: #9F9F9F;
+	color: @eqdkpContentFontColor;
 	margin-bottom: 10px;
 	margin-top: 4px;
 }
@@ -1001,7 +1001,7 @@ a.blue, a.blue:hover, a.button, a.button:hover {
 /* Fieldsets */
 
 fieldset.settings legend {
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid lighten(@eqdkpContentBorderColor, 34.4);
 	font-family: 'Trebuchet MS',Arial,sans-serif;
 	font-size: 18px;
 	font-weight: bold;
@@ -1026,14 +1026,14 @@ fieldset.settings dt {
 	width: 55%;
 	text-align: left;
 	border: none;
-	border-right: 1px solid #747474;
+	border-right: 1px solid @eqdkpContentBorderColor;
 	padding-top: 3px;
 }
 fieldset.settings dd {
 	margin: 0 0 0 55%;
 	padding: 0 0 0 5px;
 	border: none;
-	border-left: 1px solid #747474;
+	border-left: 1px solid @eqdkpContentBorderColor;
 	vertical-align: middle;
 	font-size: 1.00em;
 	text-align: left;
@@ -1067,10 +1067,10 @@ fieldset.settings dl:after {
 	height: 0px;
 }
 fieldset.settings dl:hover dt{
-	border-right: 1px solid #202020;
+	border-right: 1px solid darken(@eqdkpContentBorderColor, 33);
 }
 fieldset.settings dl:hover dd{
-	border-left: 1px solid #202020;
+	border-left: 1px solid darken(@eqdkpContentBorderColor, 33);
 }
 fieldset.settings dt label {
 	font-size: 1.00em;
@@ -1082,7 +1082,7 @@ fieldset.settings dd label {
 	margin: 0 10px 0 0;
 }
 fieldset.settings dt span {
-	color: #666;
+	color: darken(@eqdkpContentFontColor, 22.2);
 }
 
 img {
@@ -1383,11 +1383,11 @@ hr#system-readmore {
 }
 /*breadcrumb*/
 ul.breamcrumb {
-	color: #9F9F9F;
+	color: @eqdkpContentFontColor;
 	font-size: 13px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: transparent;
+	border-color: fade(@eqdkpContentBorderColor, 0);
 	border-radius: 3px 3px 3px 3px;
 	overflow: hidden;
 	width: 100%;
@@ -1862,7 +1862,7 @@ nav{
 	background: #131313;
 	margin:0;
 	padding:5px;
-	border:1px solid #6F6F6F;
+	border:1px solid darken(@eqdkpContentBorderColor, 2);
 	height:200px;
 	width:auto;
 	overflow: auto;
@@ -1907,10 +1907,10 @@ nav{
 
 /* ACP: manage menues */
 .manage_menues_block {
-	list-style-type: none; padding: 3px; margin:6px; border:1px dashed #666; min-width:180px;
+	list-style-type: none; padding: 3px; margin:6px; border:1px dashed darken(@eqdkpContentBorderColor, 5.3); min-width:180px;
 }
 .manage_menues_block2 {
-	list-style-type: none; padding: 3px; margin:6px; border:3px dashed #666; min-width:180px;
+	list-style-type: none; padding: 3px; margin:6px; border:3px dashed darken(@eqdkpContentBorderColor, 5.3); min-width:180px;
 }
 .manage_menues_block ul {
 	margin:0px;
@@ -1918,7 +1918,7 @@ nav{
 }
 .manage_menues_block li, .manage_menues_block2 li {
 	list-style-type: none; padding: 5px;
-	margin:5px; background-color:#F5F5F5; cursor:pointer; color:#202020;
+	margin:5px; background-color:#F5F5F5; cursor:pointer; color: darken(@eqdkpContentFontColor, 50);
 }
 
 .manage_menues_block .toggle_button {
