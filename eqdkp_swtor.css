@@ -1954,7 +1954,7 @@ font-size:inherit !important;
 .featured:before {
 	content: "\f005";
 	font-family: FontAwesome;
-	color: gold;
+	color: #9F4949;
 	font-size: 16px;
 }
 .not-featured {
@@ -1979,7 +1979,7 @@ font-size:inherit !important;
 .article-container.featured header > h2:before, .article_detail_container.featured h1.contentTitle:before {
 	content: "\f005";
 	font-family: FontAwesome;
-	color: gold;
+	color: #9F4949;
 	font-size: 16px;
 }
 
@@ -4256,7 +4256,7 @@ button.thirdpartylogin.openid {
 
 /* Ribbons */
 @ribbon: @eqdkpContentHighlightColor;
-@featuredColor: gold;
+@featuredColor: #9F4949;
 
 .ribbon {
 	margin: 3px;
@@ -4277,7 +4277,7 @@ button.thirdpartylogin.openid {
 	background-color: @ribbon;
 	background-image: linear-gradient(-90deg, lighten(@ribbon,20%) 0%, @ribbon 100%);
 	box-shadow: inset 0 .062em 0 rgba(255,255,255,.6), 0 .125em .25em rgba(0,0,0,.2);
-	color: @eqdkpContentBackgroundColor;
+	color: rgb(32, 32, 32);
 	text-shadow: 0 -.062em 0 rgba(0,0,0,.2);
 	width: 90%;
 	text-align: center;
@@ -4314,8 +4314,9 @@ button.thirdpartylogin.openid {
 	width: .5em;
 	height: 1em;
 	border-radius: .5em 0 0 .5em;
-	background-image: linear-gradient(to right, lighten(@ribbon,1%) 0%, darken(@ribbon,1%) 100%);
+	background-image: linear-gradient(to right, darken(fadein(@ribbon,100),10) 0%, darken(fadein(@ribbon,80),30) 100%);
 	box-shadow: 0 .062em 0 rgba(255,255,255,.6);
+
 }
 .featured .ribbon > span {
 	background: linear-gradient(-90deg, lighten(@featuredColor,20%) 0%, @featuredColor 100%);
@@ -4327,7 +4328,7 @@ button.thirdpartylogin.openid {
 	background-image: linear-gradient(to right, darken(@featuredColor,1%) 0%, @featuredColor 100%);
 }
 .featured .ribbon > span:after {
-	background-image: linear-gradient(to right, lighten(@featuredColor,1%) 0%, darken(@featuredColor,1%) 100%);
+	background-image: linear-gradient(to right, darken(@featuredColor,10%) 0%, darken(@featuredColor,30%) 100%);
 }
 
 /* Article Boxes for Calendarentries */
