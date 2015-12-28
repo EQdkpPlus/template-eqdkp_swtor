@@ -18,6 +18,7 @@
 		{JS_FILES}
 		<link rel="shortcut icon" href="{TEMPLATE_PATH}/images/favicon.png" type="image/png" />
 		<link rel="icon" href="{TEMPLATE_PATH}/images/favicon.png" type="image/png" />
+		<link rel="apple-touch-icon" href="{TEMPLATE_PATH}/images/apple-touch-icon.png" />
 		{RSS_FEEDS}
 		<!-- LISTENER head -->
 		<style type="text/css">
@@ -348,7 +349,7 @@
 		
 		<footer id="footer">
 				<!-- LISTENER footer_top -->
-				<div class="portal_block1">{PORTAL_BLOCK2}</div>
+				<div class="portal_block2">{PORTAL_BLOCK2}</div>
 				{EQDKP_PLUS_COPYRIGHT}
 				{TEMPLATE_GAME_COPYRIGHT}
 			<br />
@@ -369,6 +370,7 @@
 		<!-- LISTENER debug -->
 	<!-- ENDIF -->
 
+	<!-- IF not S_LOGGED_IN -->
 	<div id="dialog-login" title="{L_login}">
 		<form method="post" action="{EQDKP_CONTROLLER_PATH}Login{SEO_EXTENSION}{SID}" name="login" id="login" class="fv_checkit">
 			<!-- LISTENER login_popup -->
@@ -414,10 +416,11 @@
 			<!-- ENDIF -->
 		</form>
 	</div>
+	<!-- ENDIF -->
+	
 	<div class="reponsiveTestClass" style="display:none;"><!-- This div is for testing the responsiveness --></div>
 	<script type="text/javascript">
-		//<![CDATA[
-		
+		//<![CDATA[			
 		<!-- IF not S_LOGGED_IN -->
 		$(document).ready(function() {
 			/* Login Dialog */
@@ -487,7 +490,7 @@
 				notification_favicon(0, 0, 0);
 				$.get(mmocms_controller_path+"Notifications"+mmocms_seo_extension+mmocms_sid+"&markallread");
 			});
-
+	
 			//Update Favicon
 			favicon = new Favico({animation:'none'});
 			notification_favicon({NOTIFICATION_COUNT_RED}, {NOTIFICATION_COUNT_YELLOW}, {NOTIFICATION_COUNT_GREEN});
@@ -495,7 +498,7 @@
 		<!-- ELSE -->
 			<!-- JS for simple header. Above is for normal header only -->
 		<!-- ENDIF -->
-		
+
 		{JS_CODE_EOP}
 		
 		//Reset Favicon, for Bookmarks
