@@ -2370,6 +2370,10 @@ table.guesttable {
 table.guesttable td{
 	color:#D4D4D4;
 }
+table.guesttable_status td{
+	border: 0;
+	padding: 2px;
+}
 .style1 {
 	text-align: center;
 }
