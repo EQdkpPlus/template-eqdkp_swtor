@@ -435,16 +435,15 @@
 	
 	<div class="reponsiveTestClass" style="display:none;"><!-- This div is for testing the responsiveness --></div>
 	<script type="text/javascript">
-		//<![CDATA[
-			<!-- IF not S_LOGGED_IN -->
-			$(document).ready(function() {
-				/* Login Dialog */
-				$( "#dialog-login" ).dialog({
-					height: <!-- IF S_BRIDGE_INFO -->450<!-- ELSE -->350<!-- ENDIF -->,
-					width: 530,
-					modal: true,
-					autoOpen: false,
-				});
+		//<![CDATA[			
+		<!-- IF not S_LOGGED_IN -->
+		$(function(){
+			/* Login Dialog */
+			$( "#dialog-login" ).dialog({
+				height: <!-- IF S_BRIDGE_INFO -->450<!-- ELSE -->350<!-- ENDIF -->,
+				width: 530,
+				modal: true,
+				autoOpen: false,
 			});
 			<!-- ENDIF -->
 			
@@ -498,6 +497,7 @@
 			var user_clock_format = "dddd, "+mmocms_user_dateformat_long+" "+ mmocms_user_timeformat;
 			var mymoment = moment(mmocms_user_timestamp_atom).utcOffset(mmocms_user_timezone);
 			
+
 			$(document).ready(function() {
 				$('.notification-mark-all-read').on('click', function() {
 				    $('.notification-content ul').html({L_notification_none|jsencode});
