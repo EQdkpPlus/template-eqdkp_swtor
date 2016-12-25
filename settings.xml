@@ -4,6 +4,7 @@
 	<attendees_columns>6</attendees_columns>
 	<logo_position>center</logo_position>
 	<background_type>0</background_type>
+	<banner_img></banner_img>
 	<background_img></background_img>
 	<background_pos>normal</background_pos>
 	<column_right_width>0px</column_right_width>
@@ -65,12 +66,12 @@
 	<button_font_color_hover></button_font_color_hover>
 	<button_border_color_hover></button_border_color_hover>
 	
-	<input_background_color></input_background_color>
-	<input_border_color></input_border_color>
-	<input_font_color></input_font_color>
-	<input_background_color_active></input_background_color_active>
-	<input_border_color_active></input_border_color_active>
-	<input_font_color_active></input_font_color_active>
+	<input_background_color>#ffffff</input_background_color>
+	<input_border_color>#ccc</input_border_color>
+	<input_font_color>#555</input_font_color>
+	<input_background_color_active>#ffffff</input_background_color_active>
+	<input_border_color_active>#a79b2c</input_border_color_active>
+	<input_font_color_active>#555</input_font_color_active>
 	
 	<misc_color1></misc_color1>
 	<misc_color2></misc_color2>

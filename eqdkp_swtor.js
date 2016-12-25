@@ -71,7 +71,13 @@ $(function(){
 			$("#user-tooltip").hide('fast');
 			window.location=mmocms_controller_path+"Settings"+mmocms_seo_extension+mmocms_sid;
 		});
-		
+
+		/* Admin Tooltip Doubleclick */
+		$('.admin-tooltip-trigger').on('dblclick', function(event){
+			$("#admin-tooltip").hide('fast');
+			window.location=mmocms_root_path+"admin"+mmocms_sid;
+		});
+
 		user_clock();
 		
 		$( ".openLoginModal" ).on('click', function() {
@@ -128,7 +134,7 @@ $(function(){
 })
 
 /* User clock */
-function user_clock(){	
+function user_clock(){
 	var mydate = mymoment.format(user_clock_format);
 	$('.user_time').html(mydate);
 	mymoment.add(1, 's');
@@ -169,7 +175,7 @@ function notification_show_only(name){
 	}
 }
 
-function notification_update(){			
+function notification_update(){
 	$.get(mmocms_controller_path+"Notifications"+mmocms_seo_extension+mmocms_sid+"&load", function(data){
 		$('.notification-content ul').html(data);
 		recalculate_notification_bubbles();
