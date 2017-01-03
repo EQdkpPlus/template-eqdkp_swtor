@@ -24,8 +24,8 @@
 	<content_background_color>rgba(0, 0, 0, 0)</content_background_color>
 	<content_font_color>rgb(159, 159, 159)</content_font_color>
 	<content_font_color_headings>rgb(224, 189, 73)</content_font_color_headings>
-	<content_link_color></content_link_color>
-	<content_link_color_hover></content_link_color_hover>
+	<content_link_color>#e0bd49</content_link_color>
+	<content_link_color_hover>#ffec84</content_link_color_hover>
 	<content_border_color>rgb(116, 116, 116)</content_border_color>
 	<content_accent_color></content_accent_color>
 	<content_contrast_color>rgb(212, 212, 212)</content_contrast_color>
@@ -59,11 +59,11 @@
 	<sidebar_font_color>rgb(212, 212, 212)</sidebar_font_color>
 	<sidebar_border_color>rgb(107, 102, 54)</sidebar_border_color>
 	
-	<button_background_color></button_background_color>
-	<button_font_color></button_font_color>
-	<button_border_color></button_border_color>
-	<button_background_color_hover></button_background_color_hover>
-	<button_font_color_hover></button_font_color_hover>
+	<button_background_color>#666</button_background_color>
+	<button_font_color>#d7d7d7</button_font_color>
+	<button_border_color>#000</button_border_color>
+	<button_background_color_hover>#e7d278</button_background_color_hover>
+	<button_font_color_hover>#000</button_font_color_hover>
 	<button_border_color_hover></button_border_color_hover>
 	
 	<input_background_color>#ffffff</input_background_color>
