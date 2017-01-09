@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update>
+	<styleupdate styleversion="0.3.0">
+		<delete>jquery_tmpl.css</delete>
+		<delete>images/ui-bg_flat_30_cccccc_40x100.png</delete>
+		<delete>images/ui-bg_flat_50_5c5c5c_40x100.png</delete>
+		<delete>images/ui-bg_inset-soft_25_000000_1x100.png</delete>
+		<delete>images/ui-icons_222222_256x240.png</delete>
+		<delete>images/ui-icons_4b8e0b_256x240.png</delete>
+		<delete>images/ui-icons_cccccc_256x240.png</delete>
+		<delete>images/ui-icons_f22402_256x240.png</delete>
+		<delete>images/ui-icons_ffffff_256x240.png</delete>
+		<delete>images/ui-icons__256x240.png</delete>
+	</styleupdate>
+</update>
