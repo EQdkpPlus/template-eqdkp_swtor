@@ -1530,7 +1530,6 @@ ul.breamcrumb {
 	border-radius: 3px 3px 3px 3px;
 	overflow: hidden;
 	width: 100%;
-	float:left;
 }
 
 ul.breadcrumb li,
@@ -1557,7 +1556,7 @@ ul.breamcrumb li:first-child a {
 	padding-left: 1em;
 	padding-right: 3.1em;
 	padding-bottom: 7px;
-	padding-top: 7px;
+	/*padding-top: 7px;*/
 	color: transparent;
 	text-shadow: 0 0 0 transparent;
 	background-position: left center !important;
@@ -1570,7 +1569,7 @@ ul.breamcrumb li:first-child a {
 	margin-bottom: -1px;
 	background-position: right center;
 	padding-left:1em;
-	padding-right:2em;
+	padding-right:2.2em;
 }
 ul.breadcrumb li:first-child a i,
 ul.breamcrumb li:first-child a i {
@@ -1578,6 +1577,15 @@ ul.breamcrumb li:first-child a i {
 	margin-bottom: -1px;
 	margin-top: -1px;
 }
+
+ul.breadcrumb li:last-child a,
+ul.breamcrumb li:last-child a {
+	margin-bottom: -1px;
+	background-position: right center;
+	padding-left:1em;
+	padding-right:2em;
+}
+
 
 ul.breadcrumb a:hover,
 ul.breamcrumb a:hover {
@@ -2096,7 +2104,6 @@ ul.portal_block {
 .fc-button-group button {
 	border-radius: 0em;
 }
-
 /* add calendar event */
 input#selectmode + ul { position: relative; width: 160px; cursor: pointer; color:#555; }
 input#selectmode + ul > li { padding: 8px 12px; background: #fff; border: 1px solid #ccc; border-radius: 4px; }
@@ -2315,7 +2322,7 @@ a.attendee_Link:hover{
 	.attendee_box.char_edit	{ border:1px solid #ff9d55; }
 	.attendee_select		{ flex:0 0 22px; }
 	.attendee_name			{ flex:2 1 100%; color: @eqdkpContentFontColor; overflow:hidden; text-overflow:ellipsis; }
-	.attendee_name a		{ color:@eqdkpContentFontColor; overflow:hidden; text-overflow:ellipsis; vertical-align:middle; }
+	.attendee_name a		{ color:inherit; overflow:hidden; text-overflow:ellipsis; vertical-align:middle; }
 	.attendee_info			{ flex:1 0 auto; padding-right:3px; }
 	.attendee_info .fa-info	{ padding-right:5px; }
 
@@ -3611,7 +3618,7 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	}
 
 	.responsive button.ui-multiselect {
-		width: auto !important;
+		width: 100% !important;
 	}
 
 	.responsive.simple-header.mobile .floatRight {
@@ -3798,6 +3805,12 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	#bottommenu_admin, #bottommenu_chars{
 		width: 90% !important;
 	}
+	
+	// relocate portal modules
+	.portal .columnContainer { display:flex; flex-flow:column nowrap; }
+	.portal .columnContainer .first.column { order:1; }
+	.portal .columnContainer .second.column { order:0; }
+	.portal .columnContainer .third.column { order:2; }
 }
 
 @media all and (max-width: 590px) {
@@ -4377,3 +4390,20 @@ label.isBoolean > input[type="radio"]:checked + span.green, label.isBoolean > sp
 	display: inline-block;
 }
 /* End Boolean Boxes */
+
+/* Iframe widget */
+body.module-iframe {
+	background: transparent;
+	margin: 0;
+}
+
+.module-iframe #contentBody, .module-iframe #contentBody2 {
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.module-iframe #plus_debug_tabs {
+	display: none;
+} 
