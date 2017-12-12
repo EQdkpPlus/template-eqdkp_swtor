@@ -3632,10 +3632,9 @@ button#cboxPrevious, button#cboxNext, button#cboxClose, button#cboxSlideshow {
 	
 	/* Mobile Navigation */
 	.nav-mobile {
-		background: #45484d; /* Old browsers */
-		background: linear-gradient(to bottom, #45484d 0%,#000000 100%); /* W3C */
 		width: 100%;
 		min-height: 3em;
+		margin-left: 20px;
 	}
 
 	.nav-mobile > i {
