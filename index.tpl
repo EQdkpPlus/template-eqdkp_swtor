@@ -430,14 +430,14 @@
 			</fieldset>
 			<input type="text" name="{HONEYPOT_VALUE}" size="30" maxlength="30" class="userpass" />
 			<button type="submit" name="login" class="mainoption"><i class="fa fa-sign-in"></i> {L_login}</button>
-			<!-- IF AUTH_LOGIN_BUTTON != "" -->
-			<br /><br />
-			<fieldset class="settings mediumsettings">
-				<legend>{L_login_use_authmethods}</legend>
-				{AUTH_LOGIN_BUTTON}
-			</fieldset>
-			<!-- ENDIF -->
 		</form>
+		<!-- IF AUTH_LOGIN_BUTTON != "" -->
+		<br /><br />
+		<fieldset class="settings mediumsettings">
+			<legend>{L_login_use_authmethods}</legend>
+			{AUTH_LOGIN_BUTTON}
+		</fieldset>
+		<!-- ENDIF -->
 	</div>
 	<!-- ENDIF -->
 
@@ -448,7 +448,7 @@
 			$(function() {
 				/* Login Dialog */
 				$( "#dialog-login" ).dialog({
-					height: <!-- IF S_BRIDGE_INFO -->450<!-- ELSE -->350<!-- ENDIF -->,
+					height: 'auto',
 					width: 530,
 					modal: true,
 					autoOpen: false,
